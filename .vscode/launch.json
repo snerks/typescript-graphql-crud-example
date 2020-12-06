@@ -1,0 +1,19 @@
+{
+    "configurations": [
+        {
+            "name": "Attach by Process ID",
+            "processId": "${command:PickProcess}",
+            "request": "attach",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "type": "pwa-node"
+        },
+        {
+            "type": "pwa-msedge",
+            "name": "http://localhost:4000/graphql",
+            "request": "launch",
+            "url": "http://localhost:4000/graphql"
+        }
+    ]
+}
